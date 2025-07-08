@@ -98,9 +98,10 @@ section.gallery {
 	}
 }
 
-@media (max-width: 23.75rem) {
+@media (max-width: 80rem) {
 	section.gallery {
 		padding: 2.5rem 1rem;
+		margin-inline: auto;
 
 		& .content {
 			display: flex;

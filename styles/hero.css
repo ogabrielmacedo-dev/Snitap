@@ -132,13 +132,12 @@ section.hero {
 	}
 }
 
-@media (max-width: 23.75rem) {
+@media (max-width: 80rem) {
 	section.hero {
 		flex-direction: column-reverse;
 		padding: 2rem 1rem;
 
 		& h1 {
-			margin-top: -4rem;
 			text-align: center;
 		}
 
