@@ -58,7 +58,7 @@ section.hero {
 
 			&.buy {
 				padding: 1.5rem 3rem;
-				background-color: var(--snitap-joy-mid);
+				background-color: var(--snitap-sun);
 			}
 
 			&.play span {
@@ -128,6 +128,30 @@ section.hero {
 
 			transform: translateX(400%);
 			animation: slideIn 2.2s 800ms ease forwards;
+		}
+	}
+}
+
+@media (max-width: 23.75rem) {
+	section.hero {
+		flex-direction: column-reverse;
+		padding: 2rem 1rem;
+
+		& h1 {
+			margin-top: -4rem;
+			text-align: center;
+		}
+
+		& h1 div {
+			height: 2rem;
+		}
+
+		& h1 span {
+			animation: slideUp-Mobile 5s 2s infinite ease;
+		}
+
+		& .buttons {
+			flex-direction: column-reverse;
 		}
 	}
 }
@@ -213,5 +237,73 @@ section.hero {
 
 	100% {
 		transform: translateY(-15rem);
+	}
+}
+
+@keyframes slideUp-Mobile {
+	/* Radical Static */
+	0%,
+	22% {
+		transform: translateY(0rem);
+	}
+
+	/* Divertida In */
+	23% {
+		transform: translateY(calc(-2rem - 8px));
+	}
+
+	25% {
+		transform: translateY(calc(-2rem + 5px));
+	}
+	27% {
+		transform: translateY(calc(-2rem - 3px));
+	}
+	29% {
+		transform: translateY(calc(-2rem + 2px));
+	}
+
+	/* Divertida Static */
+	33%,
+	55% {
+		transform: translateY(-2rem);
+	}
+
+	/* Saudavel In */
+
+	56% {
+		transform: translateY(calc(-4rem - 8px));
+	}
+	58% {
+		transform: translateY(calc(-4rem + 5px));
+	}
+	60% {
+		transform: translateY(calc(-4rem - 3px));
+	}
+	62% {
+		transform: translateY(calc(-4rem + 2px));
+	}
+
+	/* Saudavel Static */
+	66%,
+	88% {
+		transform: translateY(-4rem);
+	}
+
+	/* Radical In */
+	89% {
+		transform: translateY(calc(-6rem - 8px));
+	}
+	91% {
+		transform: translateY(calc(-6rem + 5px));
+	}
+	93% {
+		transform: translateY(calc(-6rem - 3px));
+	}
+	95% {
+		transform: translateY(calc(-6rem + 2px));
+	}
+
+	100% {
+		transform: translateY(-6rem);
 	}
 }
